@@ -1,10 +1,10 @@
-def main(a,b):
+def main(a, b):
     """
-    String type variables a and b are given. Return True if the length is equal. If not equal, return False.
-    Args:
-        a: string
-        b: string
-    Returns:
-        True or False
+    Ikki satr a va b berilgan. Agar ularning uzunliklari teng bo'lsa True, aks holda False qaytaring.
+    Argumentlar:
+        a(str): 1-satr
+        b(str): 2-satr
+    Qaytaradi:
+        bool: javob (True yoki False)
     """
     return

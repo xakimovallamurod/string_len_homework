@@ -1,9 +1,9 @@
-def main(a):
+def main(ism):
     """
-    A variable of type string is given. Find its length.
-    Args:
-        a: string
-    Returns:
-        length of string
+    Ism berilgan. Uning uzunligini len() yordamida qaytaring.
+    Argumentlar:
+        ism(str): ism
+    Qaytaradi:
+        int: natija
     """
     return

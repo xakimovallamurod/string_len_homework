@@ -1,10 +1,10 @@
-def main(s1,s2):
+def main(ism, familiya):
     """
-    Given two strings, s1 and s2. Find their total length.
-    Args:
-        s1: string
-        s2: string
-    Returns:
-        total length of strings
+    Ism va familiya berilgan. Ularning umumiy uzunligini qaytaring.
+    Argumentlar:
+        ism(str): ism
+        familiya(str): familiya
+    Qaytaradi:
+        int: natija
     """
     return

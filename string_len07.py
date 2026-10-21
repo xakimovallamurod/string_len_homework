@@ -1,11 +1,9 @@
-def main(s1,s2,s3):
+def main(parol):
     """
-    Given three strings, s1, s2 and s3. return their odd lengths, example "[s1, s2]". If there is no odd length, return "[]".
-    Args:
-        s1: string
-        s2: string
-        s3: string
-    Returns:
-        string
+    Allamurod yangi parol o'ylab topdi. Agar parol uzunligi kamida 8 ta belgi bo'lsa True, aks holda False qaytaring.
+    Argumentlar:
+        parol(str): parol
+    Qaytaradi:
+        bool: javob (True yoki False)
     """
     return

@@ -1,9 +1,9 @@
 def main(s):
     """
-    A string variable s is given. Return the "*" sign that is equal to the length of this variable.
-    Args:
-        s: string
-    Returns:
-        string
+    Satr s berilgan. Uzunligi s ning uzunligiga teng bo'lgan, * belgilaridan iborat satr qaytaring (parolni yashirish uchun).
+    Argumentlar:
+        s(str): satr
+    Qaytaradi:
+        str: natija satri
     """
     return

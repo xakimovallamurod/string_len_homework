@@ -1,11 +1,9 @@
 def main(s):
     """
-    A string of length three is given. Check that it is a palindrome.
-    Return True if the palindrome is False otherwise
-
-    Args:
-        s: str
-    Returns:
-        bool: answer
+    So'z berilgan. Uzunligi 5 dan kichik bo'lsa "Qisqa", 5–10 bo'lsa "O'rta", 10 dan katta bo'lsa "Uzun" qaytaring.
+    Argumentlar:
+        s(str): so'z
+    Qaytaradi:
+        str: natija satri
     """
     return

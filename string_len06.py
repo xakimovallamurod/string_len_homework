@@ -1,10 +1,10 @@
-def main(s1,s2):
+def main(s1, s2):
     """
-    Given two strings, s1 and s2. Return the shortest length between them.
-    Args:
-        s1: string
-        s2: string
-    Returns:
-        shortest string
+    Ikki satr s1 va s2 berilgan. Qisqarog'ini qaytaring. Uzunliklari teng bo'lsa, s2 ni qaytaring.
+    Argumentlar:
+        s1(str): 1-satr
+        s2(str): 2-satr
+    Qaytaradi:
+        str: natija satri
     """
     return

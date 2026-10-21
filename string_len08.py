@@ -1,11 +1,10 @@
-def main(s):
+def main(matn, n):
     """
-    Given variable type string s. Return the character in the middle.
-    If the length is even, return two characters in the middle.
-
-    Args:
-        s: str
-    Returns:
-        str: answer
+    Allamurod ijtimoiy tarmoqqa post yozmoqda. Matn va ruxsat etilgan maksimal uzunlik n berilgan. Agar matn uzunligi n dan oshsa True, aks holda False qaytaring.
+    Argumentlar:
+        matn(str): matn
+        n(int): maksimal uzunlik
+    Qaytaradi:
+        bool: javob (True yoki False)
     """
     return

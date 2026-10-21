@@ -1,9 +1,9 @@
-def main(a):
+def main(s):
     """
-    A string type variable is given. Return True if its length is even. Return False if its length is odd.
-    Args:
-        a: string
-    Returns:
-        True or False
+    Satr berilgan. Agar uning uzunligi juft bo'lsa True, toq bo'lsa False qaytaring.
+    Argumentlar:
+        s(str): satr
+    Qaytaradi:
+        bool: javob (True yoki False)
     """
     return

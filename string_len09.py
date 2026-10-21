@@ -1,12 +1,10 @@
-def main(num1, num2):
+def main(ism, familiya):
     """
-    Given two non-negative integers, num1 and num2 represented as string.
-    Return the sum of num1 and num2 as a string.
-
-    Args:
-        num1: str
-        num2: str
-    Returns:
-        str: answer
+    Ism va familiya berilgan. Ularni orasiga bo'sh joy qo'yib birlashtiring va hosil bo'lgan satr uzunligini qaytaring.
+    Argumentlar:
+        ism(str): ism
+        familiya(str): familiya
+    Qaytaradi:
+        int: natija
     """
     return

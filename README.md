@@ -1,181 +1,393 @@
-## Xush kelibsiz!
----
+# Satr uzunligi: len()
 
 ## string_len01
 
-Satr tipidagi o'zgaruvchi berilgan. Uning uzunligini toping.
+Ism berilgan. Uning uzunligini `len()` yordamida qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: a="python"
-Output: 6
+Kirish: ism="Allamurod"
+Chiqarish: 9
+```
+
+**Misol 2:**
+
+```Python
+Kirish: ism="Xakimov"
+Chiqarish: 7
 ```
 
 ---
 
 ## string_len02
 
-Satr tipidagi o'zgaruvchi berilgan. Agar uning uzunligi juft bo'lsa, `True` qaytaring. Agar toq bo'lsa, `False` qaytaring.
+Satr berilgan. Agar uning uzunligi juft bo'lsa `True`, toq bo'lsa `False` qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: a="code"
-Output: True
+Kirish: s="Toshkent"
+Chiqarish: True
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s="Xakimov"
+Chiqarish: False
 ```
 
 ---
 
 ## string_len03
 
-Satr tipidagi o'zgaruvchilar `a` va `b` berilgan. Agar uzunliklari teng bo'lsa, `True`, aks holda `False` qaytaring.
+Ikki satr a va b berilgan. Agar ularning uzunliklari teng bo'lsa `True`, aks holda `False` qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: a="code" b="exam"
-Output: True
+Kirish: a="Python", b="Django"
+Chiqarish: True
 ```
 
 **Misol 2:**
 
 ```Python
-Input: a="code" b="python"
-Output: False
+Kirish: a="Allamurod", b="Xakimov"
+Chiqarish: False
 ```
 
 ---
 
 ## string_len04
 
-Berilgan satr `s`. Satr uzunligiga teng bo'lgan `*` belgilaridan iborat satr qaytaring.
+Satr s berilgan. Uzunligi s ning uzunligiga teng bo'lgan, `*` belgilaridan iborat satr qaytaring (parolni yashirish uchun).
 
 **Misol 1:**
 
 ```Python
-Input: a="code"
-Output: "****"
+Kirish: s="Allamurod"
+Chiqarish: "*********"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s="1234"
+Chiqarish: "****"
 ```
 
 ---
 
 ## string_len05
 
-Ikki satr `s1` va `s2` berilgan. Ularning umumiy uzunligini toping.
+Ism va familiya berilgan. Ularning umumiy uzunligini qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: s1="code" s2="python"
-Output: 10
+Kirish: ism="Allamurod", familiya="Xakimov"
+Chiqarish: 16
 ```
 
 ---
 
 ## string_len06
 
-Ikki satr `s1` va `s2` berilgan. Ularning eng qisqa uzunlikka ega bo'lganini qaytaring.
+Ikki satr s1 va s2 berilgan. Qisqarog'ini qaytaring. Uzunliklari teng bo'lsa, s2 ni qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: s1="code" s2="python"
-Output: "code"
+Kirish: s1="Allamurod", s2="Xakimov"
+Chiqarish: "Xakimov"
 ```
 
 **Misol 2:**
 
 ```Python
-Input: s1="code" s2="exam"
-Output: "exam"
+Kirish: s1="code", s2="exam"
+Chiqarish: "exam"
 ```
 
 ---
 
 ## string_len07
 
-Uchta satr `s1`, `s2`, va `s3` berilgan. Ular orasida uzunligi toq bo'lganlarini qaytaring. Agar toq uzunlikdagi satrlar bo'lmasa, `"[]"` qaytaring.
+Allamurod yangi parol o'ylab topdi. Agar parol uzunligi kamida 8 ta belgi bo'lsa `True`, aks holda `False` qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: s1="code" s2="python" s3="coder"
-Output: "[coder]"
-```
----
-
-## string_len08
-
-Berilgan satr `s`. Agar uzunligi toq bo'lsa, o'rtadagi belgisini qaytaring. Agar uzunligi juft bo'lsa, o'rtadagi ikkita belgisini qaytaring.
-
-**Misol 1:**
-
-```Python
-Input: s = "abcdf"
-Output: "c"
+Kirish: parol="Allamurod2000"
+Chiqarish: True
 ```
 
 **Misol 2:**
 
 ```Python
-Input: s = "cool"
-Output: "oo"
+Kirish: parol="qwe123"
+Chiqarish: False
 ```
 
-**Cheklovlar:**
-  - 2 < len(s)
+---
+
+## string_len08
+
+Allamurod ijtimoiy tarmoqqa post yozmoqda. Matn va ruxsat etilgan maksimal uzunlik n berilgan. Agar matn uzunligi n dan oshsa `True`, aks holda `False` qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: matn="Bugun Python o'rgandim", n=15
+Chiqarish: True
+```
+
+**Misol 2:**
+
+```Python
+Kirish: matn="Salom", n=15
+Chiqarish: False
+```
 
 ---
 
 ## string_len09
 
-Berilgan ikkita manfiy bo'lmagan butun son (satrlarda ko'rsatilgan) `num1` va `num2`. Ularning yig'indisini satr ko'rinishida qaytaring.
+Ism va familiya berilgan. Ularni orasiga bo'sh joy qo'yib birlashtiring va hosil bo'lgan satr uzunligini qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: num1 = "12", num2 = "5"
-Output: "17"
+Kirish: ism="Allamurod", familiya="Xakimov"
+Chiqarish: 17
 ```
-
-**Misol 2:**
-
-```Python
-Input: num1 = "425", num2 = "81"
-Output: "506"
-```
-
-**Cheklovlar:**
-  - 1 <= len(num1), len(num2) <= 10^4
 
 ---
 
 ## string_len10
 
-Uch belgidan iborat bo'lgan satr berilgan. Agar u palindrom bo'lsa, `True` qaytaring. Aks holda `False` qaytaring.
+So'z berilgan. Uzunligi 5 dan kichik bo'lsa "Qisqa", 5–10 bo'lsa "O'rta", 10 dan katta bo'lsa "Uzun" qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: s = "cff"
-Output: False
+Kirish: s="Olma"
+Chiqarish: "Qisqa"
 ```
 
 **Misol 2:**
 
 ```Python
-Input: s = "dcd"
-Output: True
+Kirish: s="Allamurod"
+Chiqarish: "O'rta"
 ```
 
-**Cheklovlar:**
-  - len(s) == 3
+**Misol 3:**
+
+```Python
+Kirish: s="Dasturlashtirish"
+Chiqarish: "Uzun"
+```
 
 ---
 
-# Ogohlantirish
-- Boshqalarning echimlarini nusxa ko'chirmang yoki ko'chirishdan foydalanmang.
-- Izohlarni o'chirib yubormang.
+## string_len11
 
-Ushbu masalalarni yechishni boshlashingiz mumkin. Har birini alohida yechib, natijani tekshirib chiqing. Agar qo'shimcha savollar bo'lsa, murojaat qiling!
+Satr berilgan (uzunligi 2 dan katta). Agar uzunligi toq bo'lsa o'rtadagi belgini, juft bo'lsa o'rtadagi ikkita belgini qaytaring. `len()` va indeksdan foydalaning.
+
+**Misol 1:**
+
+```Python
+Kirish: s="Allamurod"
+Chiqarish: "m"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s="Toshkent"
+Chiqarish: "hk"
+```
+
+**Misol 3:**
+
+```Python
+Kirish: s="Xakimov"
+Chiqarish: "i"
+```
+
+---
+
+## string_len12
+
+So'z berilgan. Agar uning birinchi va oxirgi belgisi bir xil bo'lsa `True`, aks holda `False` qaytaring. Oxirgi belgini `len()` yordamida toping.
+
+**Misol 1:**
+
+```Python
+Kirish: s="radar"
+Chiqarish: True
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s="Allamurod"
+Chiqarish: False
+```
+
+---
+
+## string_len13
+
+Uchta satr berilgan. Ulardan nechtasining uzunligi toq ekanini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: s1="Allamurod", s2="Xakimov", s3="Toshkent"
+Chiqarish: 2
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s1="code", s2="exam", s3="uz"
+Chiqarish: 0
+```
+
+---
+
+## string_len14
+
+Uchta satr berilgan. Eng uzunini qaytaring. Uzunliklari teng bo'lsa, birinchi uchraganini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: s1="Allamurod", s2="Xakimov", s3="Toshkent"
+Chiqarish: "Allamurod"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s1="uz", s2="code", s3="exam"
+Chiqarish: "code"
+```
+
+---
+
+## string_len15
+
+Matn berilgan. Uni ramkaga olib qaytaring: yuqori va pastki qator "+", matn uzunligicha "-" va "+" dan, o'rta qator "|" + matn + "|" dan iborat. Qatorlarni `\n` bilan ajrating.
+
+**Misol 1:**
+
+```Python
+Kirish: matn="Allamurod"
+Chiqarish: "+---------+\n|Allamurod|\n+---------+"
+```
+
+---
+
+## string_len16
+
+Ism va familiya berilgan. Initsiallar va umumiy harflar sonidan iborat satr qaytaring: "<ism[0]>.<familiya[0]>. <umumiy uzunlik>".
+
+**Misol 1:**
+
+```Python
+Kirish: ism="Allamurod", familiya="Xakimov"
+Chiqarish: "A.X. 16"
+```
+
+---
+
+## string_len17
+
+Satr s va son n berilgan. Agar satr uzunligi n dan kichik bo'lsa, uni oxiriga nuqta (".") qo'shib n uzunlikkacha to'ldiring. Aks holda satrni o'zgarishsiz qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: s="Allamurod", n=12
+Chiqarish: "Allamurod..."
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s="Allamurod", n=5
+Chiqarish: "Allamurod"
+```
+
+---
+
+## string_len18
+
+Ikki so'z berilgan. Agar ularning uzunligi teng bo'lsa "Teng" qaytaring. Aks holda "<uzun so'z> <farq> ta harfga uzun" ko'rinishidagi satrni qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: s1="Allamurod", s2="Xakimov"
+Chiqarish: "Allamurod 2 ta harfga uzun"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s1="Olma", s2="Toshkent"
+Chiqarish: "Toshkent 4 ta harfga uzun"
+```
+
+**Misol 3:**
+
+```Python
+Kirish: s1="code", s2="exam"
+Chiqarish: "Teng"
+```
+
+---
+
+## string_len19
+
+Allamurod parollarini tekshirmoqda. Parol uzunligi 6 dan kam bo'lsa "Zaif", 6–9 bo'lsa "O'rtacha", 10 va undan ko'p bo'lsa "Kuchli" qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: parol="12345"
+Chiqarish: "Zaif"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: parol="Xakimov26"
+Chiqarish: "O'rtacha"
+```
+
+**Misol 3:**
+
+```Python
+Kirish: parol="Allamurod2000!"
+Chiqarish: "Kuchli"
+```
+
+---
+
+## string_len20
+
+Ism, familiya va tug'ilgan yil berilgan. Login yarating: ismning birinchi harfi + familiyaning birinchi harfi + tug'ilgan yil + ism va familiya umumiy uzunligi.
+
+**Misol 1:**
+
+```Python
+Kirish: ism="Allamurod", familiya="Xakimov", yil=2000
+Chiqarish: "AX200016"
+```
+
